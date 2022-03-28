@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+          <title>RTDL</title>
+          <link rel="stylesheet" href="./Practice_webpage_2_Home.css">
+          <meta name="viewport:width=device-width;"></meta>
+</head>
+<search>
+          <h1>Road to defeat Leetcode</h1>
+          <input id="search-input">
+          <div class="section">
+                    <div class="title" onclick="ck1(this)">
+                              <img src="./image_bin/Arrow-down.png" style="display: none;" id="Problem_1_down">
+                              <img src="./image_bin/Arrow-up.png" id="Problem_1_up">
+                              <h4 >Problem 1 Two Sums</h4>
+                    </div>
+                    <div class="info" id="Problem_1">
+                              <div class="des-problem">
+                                        <p><strong>Problem 1 Two Sums</strong></p>
+                                        <p>Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+                                                  You may assume that each input would have exactly one solution, and you may not use the same element twice.
+                                                  You can return the answer in any order.</p>
+                              </div>
+                              <div class="des-code">
+                                        <div>
+                                                  <p><strong>
+                                                            Solution#1
+                                                  </strong></p>
+                                                  <code><pre>
+class Solution(object):
+          def twoSum(self, nums, target):
+                    for i in range(len(nums)):
+                              nums_left=nums[(i+1):]
+                              for j in range(len(nums_left)):
+                                        if(nums[i]+nums_left[j])==target:
+                                                  return i,j+i+1;
+                                                  </code></pre>
+                                        </div>
+                                        <div>
+                                                  <p><strong>
+                                                            Solution#1
+                                                  </strong></p>
+                                                  <code><p>
+                                                            class Solution(object):
+                                                            def twoSum(self, nums, target):
+                                                            for i in range(len(nums)):
+                                                            nums_left=nums[(i+1):]
+                                                            for j in range(len(nums_left)):
+                                                            if(nums[i]+nums_left[j])==target:
+                                                            return i,j+i+1;
+                                                  </code></p>
+                                        </div>
+                              </div>
+                              <div class="des-result">
+                                        <p>result</p>
+                              </div>
+                              <div class="des-thoughts">
+                                        <p>thoughts</p>
+                              </div>
+                    </div>
+          </div>
+          <div class="section">
+                    <div class="title" onclick="ck1(this)">
+                              <img src="./image_bin/Arrow-down.png" style="display: none;" id="Problem_1_down">
+                              <img src="./image_bin/Arrow-up.png" id="Problem_1_up">
+                              <h4 >Problem 1</h4>
+                    </div>
+                    <div class="info" id="Problem_1">
+                              <div class="des-problem">
+                                        <p><strong>Problem 1 Two Sums</strong></p>
+                                        <p>Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+                                                  You may assume that each input would have exactly one solution, and you may not use the same element twice.
+                                                  You can return the answer in any order.</p>
+                              </div>
+                              <div class="des-code">
+                                        <div>
+                                                  <p><strong>
+                                                            Solution#1
+                                                  </strong></p>
+                                                  <code><p>
+                                                            class Solution(object):
+                                                            def twoSum(self, nums, target):
+                                                            for i in range(len(nums)):
+                                                            nums_left=nums[(i+1):]
+                                                            for j in range(len(nums_left)):
+                                                            if(nums[i]+nums_left[j])==target:
+                                                            return i,j+i+1;
+                                                  </code></p>
+                                        </div>
+                                        <div>
+                                                  <p><strong>
+                                                            Solution#1
+                                                  </strong></p>
+                                                  <code><p>
+                                                            class Solution(object):
+                                                            def twoSum(self, nums, target):
+                                                            for i in range(len(nums)):
+                                                            nums_left=nums[(i+1):]
+                                                            for j in range(len(nums_left)):
+                                                            if(nums[i]+nums_left[j])==target:
+                                                            return i,j+i+1;
+                                                  </code></p>
+                                        </div>
+                              </div>
+                              <div class="des-result">
+                                        <p>result</p>
+                              </div>
+                              <div class="des-thoughts">
+                                        <p>thoughts</p>
+                              </div>
+                    </div>
+          </div>
+          <p id="test">test</p>
+          
+          <script>
+                    function ck1(element){
+                              var child1=element.children[0];
+                              var child2=element.children[1];
+                              var value = window.getComputedStyle(element.nextElementSibling).display;
+                              document.getElementById("test").innerHTML=child1;
+
+                              if (value != "none")
+                              {
+                                        element.nextElementSibling.style.display="none";
+                                        child1.style.display="none";
+                                        child2.style.display="inline-block";
+                              }
+                              if (value == "none")
+                              {
+                                        element.nextElementSibling.style.display="block";
+                                        child1.style.display="inline-block";
+                                        child2.style.display="none";
+                              }
+                    }
+          </script>
+</body>

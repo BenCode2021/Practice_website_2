@@ -1,0 +1,115 @@
+*{
+          box-sizing: border-box;
+}
+h1{
+          text-align: center;
+}
+.section{
+          box-shadow: 0px 2px 4px;
+          position: relative;
+          margin-top: 10px;
+}
+.solution-title{
+          position: sticky;
+          top: 0px;
+          border: 1px solid black;
+          border-bottom: 0px solid;
+          margin-top: 5px;
+          margin-bottom: 0px;
+}
+.title{
+          user-select: none;
+          border: 2px solid black;
+}
+.title:hover{
+          background-color: rgb(206, 206, 206);
+}
+.section div img{
+          display: inline-block;
+          margin-left: 10px;
+          width: 20px;
+}
+.section div h4{
+          display: inline-block;
+          padding: 10px 10px;
+          margin: 5px;
+}
+.info {
+          overflow: hidden;
+          background-color: white;
+          display: none;
+          border: 2px solid black;
+          border-top:0px;
+          margin-top: 0px;
+          padding: 2px;
+}
+.info div{
+          margin: 5px;
+}
+.des-problem{
+          padding: 5px;
+          border: 1px solid;
+}
+.des-code{
+          padding: 0px;
+          margin: 0px;
+}
+.des-code div{
+          border: 1px solid;
+          margin: 5px 0px;
+          padding: 5px;
+}
+.des-code div pre{
+          overflow: auto;
+}
+.des-result{
+          border: 1px solid;
+          padding: 5px;
+}
+.des-thoughts{
+          border: 1px solid;
+          padding: 5px;
+}
+/* For mobile phones: */
+[class*="dse-"] {
+          width: 100%;
+}
+@media only screen and (min-width:700px){
+          .des-problem{
+                    vertical-align: top;
+                    display: inline-block;
+                    width: 35%;
+          }
+          .des-code {
+                    vertical-align: top;
+                    display: inline-block;
+                    width: 61%;
+          }
+          .des-result{
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 98%;
+          }
+          .des-thoughts{
+                    width: 98%;
+          }
+}
+@media only screen and (min-width:1000px){
+          .des-problem{
+                    float: left;
+                    width: 34%;
+          }
+          .des-code{
+                    float: right;
+                    width: 63.5%;
+          }
+          .des-result{
+                    float: left;
+                    width: 34%;
+          }
+          .des-thoughts{
+                    float: left;
+                    width: 34%;
+          }
+
+}
